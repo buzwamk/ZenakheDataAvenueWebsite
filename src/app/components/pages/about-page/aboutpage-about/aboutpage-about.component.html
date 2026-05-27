@@ -1,0 +1,53 @@
+<section class="about-area ptb-100">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-image" *ngFor="let Image of aboutImage;">
+                    <img [src]="Image.img" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    <div class="content" *ngFor="let Content of aboutContent;">
+                        <span class="sub-title"><img src="assets/img/star-icon.svg" alt="image"> {{Content.subTitle}}</span>
+                        <h2>{{Content.title}}</h2>
+                        <p>{{Content.paragraphText1}}</p>
+                        <ul class="features-list">
+                            <li *ngFor="let List of featuresList;"><span>
+                                <div class="icon">
+                                    <img [src]="List.icon" alt="image">
+                                </div>
+                                <h3>{{List.title}}</h3>
+                                <p>{{List.subTitle}}</p>
+                            </span></li>
+                        </ul>
+                        <p>{{Content.paragraphText2}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-inner-area">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let Text of aboutText;">
+                    <div class="about-text">
+                        <h3>{{Text.title}}</h3>
+                        <p>{{Text.paragraphText}}</p>
+                        
+                        <ul class="features-list">
+                            <li><i class="{{Text.icon}}"></i> {{Text.featuresList1}}</li>
+                            <li><i class="{{Text.icon}}"></i> {{Text.featuresList2}}</li>
+                            <li><i class="{{Text.icon}}"></i> {{Text.featuresList3}}</li>
+                            <li><i class="{{Text.icon}}"></i> {{Text.featuresList1}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle-shape1"><img src="assets/img/shape/circle-shape1.png" alt="image"></div>
+</section>

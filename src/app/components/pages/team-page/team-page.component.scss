@@ -1,0 +1,239 @@
+.single-scientist-box {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: var(--transition);
+
+    .image {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 83%;
+            transition: var(--transition);
+            border-radius: 5px 5px 0 0;
+            background-color: #f1f8fb;
+        }
+    }
+    .content {
+        background-color: var(--whiteColor);
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+
+        h3 {
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+        span {
+            color: var(--optionalColor);
+            font: {
+                size: 16px;
+                weight: 600;
+            };
+        }
+        .social {
+            padding-left: 0;
+            list-style-type: none;
+            margin: {
+                top: 13px;
+                bottom: 0;
+            };
+            li {
+                display: inline-block;
+                margin: {
+                    left: 3px;
+                    right: 3px;
+                };
+                a {
+                    display: block;
+                    background-color: var(--whiteColor);
+                    border: 1.2px solid #ece4da;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    line-height: 37px;
+                    color: var(--optionalColor);
+
+                    &:hover {
+                        background-color: var(--mainColor);
+                        border-color: var(--mainColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+
+        .image {
+            &::before {
+                height: 80%;
+            }
+        }
+    }
+}
+.col-lg-3 {
+    &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10) {
+        .single-scientist-box {
+            .image {
+                &::before {
+                    background-color: #e3fbff;
+                }
+            }
+        }
+    }
+}
+.scientist-section-title {
+    .sub-title {
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color: var(--mainColor);
+        font: {
+            weight: 700;
+            size: 15px;
+        };
+        img {
+            margin-right: 5px;
+            animation: {
+                name: rotateme;
+                duration: 40s;
+                iteration-count: infinite;
+                timing-function: linear;
+            };
+        }
+    }
+    h2 {
+        margin-bottom: 12px;
+        font: {
+            size: 44px;
+        };
+    }
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .default-btn {
+        margin-top: 5px;
+    }
+}
+.single-scientist-item {
+    margin-bottom: 30px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+
+    img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+}
+.scientist-box-list {
+    padding-right: 15px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+
+    .single-scientist-item {
+        margin-bottom: 20px;
+    }
+    .col-lg-6 {
+        &:nth-child(1) {
+            .single-scientist-item {
+                padding-right: 30px;
+            }
+        }
+        &:nth-child(2) {
+            .single-scientist-item {
+                padding-right: 20px;
+            }
+        }
+        &:nth-child(3) {
+            .single-scientist-item {
+                padding-left: 20px;
+                margin-top: -100px;
+            }
+        }
+    }
+}
+.single-scientist-item-box {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: var(--transition);
+
+    .image {
+        position: relative;
+
+        .social {
+            padding-left: 0;
+            list-style-type: none;
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: {
+                bottom: 0;
+            };
+            li {
+                display: inline-block;
+                margin: {
+                    left: 1px;
+                    right: 1px;
+                };
+                a {
+                    display: block;
+                    background-color: var(--whiteColor);
+                    border: 1.2px solid #ece4da;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    line-height: 37px;
+                    color: var(--optionalColor);
+
+                    &:hover {
+                        background-color: var(--mainColor);
+                        border-color: var(--mainColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        margin-top: 25px;
+        border-radius: 0 0 5px 5px;
+
+        h3 {
+            margin-bottom: 5px;
+            font-size: 23px;
+        }
+        span {
+            color: var(--mainColor);
+            font: {
+                size: 16px;
+                weight: 600;
+            };
+        }
+    }
+    &:hover {
+        .image {
+            .social {
+                opacity: 1;
+                visibility: visible;
+                bottom: 20px;
+            }
+        }
+    }
+}

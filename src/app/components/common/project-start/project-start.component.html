@@ -1,0 +1,23 @@
+<section class="project-start-area ptb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="project-start-image" *ngFor="let Image of projectStartImage;">
+                    <img [src]="Image.img" alt="Start your project with Zenakhe Digital Solutions">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="project-start-content" *ngFor="let Content of projectStartContent;">
+                    <h2>{{Content.title}}</h2>
+                    <p>{{Content.paragraphText}}</p>
+                    <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn">
+                        <i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle-shape1"><img src="assets/img/shape/circle-shape1.png" alt=""></div>
+    <div class="vector-shape9"><img src="assets/img/shape/vector-shape9.png" alt=""></div>
+    <div class="vector-shape10"><img src="assets/img/shape/vector-shape10.png" alt=""></div>
+</section>

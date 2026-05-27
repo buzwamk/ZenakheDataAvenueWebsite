@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <!-- Team members: people icon -->
+  <circle cx="22" cy="18" r="9" fill="#ff5d22"/>
+  <path d="M4 50 Q4 36 22 36 Q40 36 40 50" fill="#ff5d22"/>
+  <circle cx="42" cy="20" r="7" fill="#221638"/>
+  <path d="M28 52 Q30 40 42 40 Q54 40 56 52" fill="#221638"/>
+</svg>

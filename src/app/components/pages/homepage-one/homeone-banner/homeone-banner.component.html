@@ -1,0 +1,24 @@
+<div class="main-banner">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12">
+                <div class="main-banner-content" *ngFor="let Content of mainBannerContent;">
+                    <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h1>
+                    <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">{{Content.paragraphText}}</p>
+                    <div class="btn-box wow animate__animated animate__fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                        <a routerLink="/contact" class="default-btn"><i class="flaticon-right"></i>Start a Project<span></span></a>
+                        <a href="{{Content.videoBtnLink}}" class="video-btn popup-youtube" target="_blank">
+                            <i class="{{Content.videoBtnIcon}}"></i> {{Content.videoBtnText}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12">
+                <div class="main-banner-animation-image wow animate__animated animate__fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+                    <img src="assets/img/main-banner/banner-one/hero-illustration.svg" alt="Zenakhe Digital Solutions — Data Analytics and Software Development">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

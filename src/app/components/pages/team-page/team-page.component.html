@@ -1,0 +1,40 @@
+<section class="page-title-area">
+    <div class="container">
+        <div class="page-title-content" *ngFor="let pageTitle of pageTitleArea;">
+            <h2>{{pageTitle.title}}</h2>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>{{pageTitle.title}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt="image"></div>
+    <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt="image"></div>
+    <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt="image"></div>
+</section>
+
+<section class="scientist-area bg-color pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let scientistBoxContent of singleScientistBox;">
+                <div class="single-scientist-box wow animate__animated animate__fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="image">
+                        <img [src]="scientistBoxContent.img" alt="image">
+                    </div>
+    
+                    <div class="content">
+                        <h3>{{scientistBoxContent.title}}</h3>
+                        <span>{{scientistBoxContent.designation}}</span>
+                        <ul class="social">
+                            <li><a href="{{scientistBoxContent.facebookLink}}" class="d-block" target="_blank"><i class='{{scientistBoxContent.facebookIcon}}'></i></a></li>
+                            <li><a href="{{scientistBoxContent.twitterLink}}" class="d-block" target="_blank"><i class='{{scientistBoxContent.twitterIcon}}'></i></a></li>
+                            <li><a href="{{scientistBoxContent.instagramLink}}" class="d-block" target="_blank"><i class='{{scientistBoxContent.instagramIcon}}'></i></a></li>
+                            <li><a href="{{scientistBoxContent.linkedinLink}}" class="d-block" target="_blank"><i class='{{scientistBoxContent.linkedinIcon}}'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

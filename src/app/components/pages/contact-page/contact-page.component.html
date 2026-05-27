@@ -1,0 +1,177 @@
+<section class="page-title-area">
+    <div class="container">
+        <div class="page-title-content" *ngFor="let pageTitle of pageTitleArea;">
+            <h2>{{pageTitle.title}}</h2>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>{{pageTitle.title}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt=""></div>
+    <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt=""></div>
+    <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt=""></div>
+</section>
+
+<!-- Contact Info Boxes -->
+<section class="contact-info-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box" *ngFor="let box of contactInfoBox1;">
+                    <div class="back-icon"><i class='{{box.icon}}'></i></div>
+                    <div class="icon"><i class='{{box.icon}}'></i></div>
+                    <h3>{{box.title}}</h3>
+                    <p>{{box.location}}</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box" *ngFor="let box of contactInfoBox2;">
+                    <div class="back-icon"><i class='{{box.icon}}'></i></div>
+                    <div class="icon"><i class='{{box.icon}}'></i></div>
+                    <h3>{{box.title}}</h3>
+                    <p>Mobile: <a href="tel:{{box.number}}">{{box.number}}</a></p>
+                    <p>Email: <a href="mailto:{{box.email}}">{{box.email}}</a></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="contact-info-box" *ngFor="let box of contactInfoBox3;">
+                    <div class="back-icon"><i class='{{box.icon}}'></i></div>
+                    <div class="icon"><i class='{{box.icon}}'></i></div>
+                    <h3>{{box.title}}</h3>
+                    <p>{{box.text1}}</p>
+                    <p>{{box.text2}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-area pb-100">
+    <div class="container">
+        <div class="section-title" *ngFor="let t of sectionTitle;">
+            <span class="sub-title"><img src="assets/img/star-icon.svg" alt=""> {{t.subTitle}}</span>
+            <h2>{{t.title}}</h2>
+            <p>{{t.paragraphText}}</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-image" *ngFor="let img of contactImage;">
+                    <img [src]="img.img" alt="Contact Zenakhe Digital Solutions">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-form">
+
+                    <!-- Success message -->
+                    <div *ngIf="submitted && successMsg" class="alert alert-success" role="alert">
+                        <strong><i class='bx bx-check-circle'></i> Message sent!</strong>
+                        <p class="mb-0 mt-1">{{successMsg}}</p>
+                    </div>
+
+                    <!-- Error message -->
+                    <div *ngIf="errorMsg" class="alert alert-danger" role="alert">
+                        <strong><i class='bx bx-error-circle'></i> Error</strong>
+                        <p class="mb-0 mt-1">{{errorMsg}}</p>
+                    </div>
+
+                    <!-- Form -->
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" *ngIf="!submitted" novalidate>
+                        <div class="row">
+
+                            <!-- Name -->
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="text"
+                                        formControlName="name"
+                                        class="form-control"
+                                        [class.is-invalid]="f['name'].invalid && f['name'].touched"
+                                        placeholder="Your name *">
+                                    <div class="invalid-feedback" *ngIf="f['name'].touched && f['name'].errors">
+                                        <span *ngIf="f['name'].errors['required']">Name is required.</span>
+                                        <span *ngIf="f['name'].errors['minlength']">Name must be at least 2 characters.</span>
+                                    </div>
+                                    <div class="text-danger small mt-1" *ngIf="fieldErrors['name']">{{fieldErrors['name']}}</div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="email"
+                                        formControlName="email"
+                                        class="form-control"
+                                        [class.is-invalid]="f['email'].invalid && f['email'].touched"
+                                        placeholder="Your email address *">
+                                    <div class="invalid-feedback" *ngIf="f['email'].touched && f['email'].errors">
+                                        <span *ngIf="f['email'].errors['required']">Email is required.</span>
+                                        <span *ngIf="f['email'].errors['email']">Please enter a valid email address.</span>
+                                    </div>
+                                    <div class="text-danger small mt-1" *ngIf="fieldErrors['email']">{{fieldErrors['email']}}</div>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="tel"
+                                        formControlName="phone"
+                                        class="form-control"
+                                        placeholder="Your phone number (optional)">
+                                    <div class="text-danger small mt-1" *ngIf="fieldErrors['phone']">{{fieldErrors['phone']}}</div>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <textarea
+                                        formControlName="message"
+                                        class="form-control"
+                                        [class.is-invalid]="f['message'].invalid && f['message'].touched"
+                                        cols="30" rows="6"
+                                        placeholder="Tell us about your project... *"></textarea>
+                                    <div class="invalid-feedback" *ngIf="f['message'].touched && f['message'].errors">
+                                        <span *ngIf="f['message'].errors['required']">Message is required.</span>
+                                        <span *ngIf="f['message'].errors['minlength']">Message must be at least 10 characters.</span>
+                                    </div>
+                                    <div class="text-danger small mt-1" *ngIf="fieldErrors['message']">{{fieldErrors['message']}}</div>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-lg-12 col-md-12">
+                                <button
+                                    type="submit"
+                                    class="default-btn"
+                                    [disabled]="loading">
+                                    <i class="flaticon-tick" *ngIf="!loading"></i>
+                                    <span class="spinner-border spinner-border-sm me-2" *ngIf="loading" role="status"></span>
+                                    {{ loading ? 'Sending...' : 'Send Message' }}<span></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map -->
+<div id="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.5!2d18.5244!3d-33.8009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc58ad76e867e9%3A0xbb83ea431a35be54!2s132%20Apollo%20St%2C%20Table%20View%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Zenakhe Digital Solutions office location">
+    </iframe>
+</div>

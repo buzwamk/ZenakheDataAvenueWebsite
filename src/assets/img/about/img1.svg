@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" width="500" height="420">
+  <defs>
+    <linearGradient id="aboutBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3ee"/>
+      <stop offset="100%" style="stop-color:#f8f4ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background shape -->
+  <rect x="30" y="30" width="440" height="360" rx="24" fill="url(#aboutBg)"/>
+
+  <!-- Left: Map of Africa outline (simplified) -->
+  <g transform="translate(40, 40)" opacity="0.08">
+    <path d="M120,20 L160,15 L200,25 L220,60 L210,100 L230,140 L220,180 L200,220 L180,260 L160,290 L140,310 L120,290 L100,260 L80,220 L60,180 L50,140 L70,100 L60,60 L80,25 Z" fill="#221638"/>
+  </g>
+
+  <!-- Main illustration: team at work -->
+  <!-- Desk -->
+  <rect x="60" y="280" width="380" height="12" rx="6" fill="#221638" opacity="0.15"/>
+
+  <!-- Person 1: developer at laptop -->
+  <rect x="80" y="200" width="120" height="80" rx="10" fill="#ffffff" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.08))"/>
+  <!-- Laptop screen -->
+  <rect x="90" y="210" width="100" height="60" rx="6" fill="#221638"/>
+  <rect x="95" y="215" width="90" height="48" rx="4" fill="#1a1030"/>
+  <!-- Code on screen -->
+  <line x1="100" y1="225" x2="130" y2="225" stroke="#ff5d22" stroke-width="2" stroke-linecap="round"/>
+  <line x1="100" y1="232" x2="145" y2="232" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  <line x1="100" y1="239" x2="135" y2="239" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="100" y1="246" x2="140" y2="246" stroke="#ff5d22" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="100" y1="253" x2="125" y2="253" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  <!-- Person head -->
+  <circle cx="140" cy="185" r="18" fill="#ff5d22"/>
+  <circle cx="140" cy="178" r="10" fill="#ffcba4"/>
+  <rect x="130" y="185" width="20" height="18" rx="4" fill="#ffcba4"/>
+
+  <!-- Person 2: data analyst -->
+  <rect x="230" y="180" width="130" height="100" rx="10" fill="#ffffff" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.08))"/>
+  <!-- Chart on screen -->
+  <rect x="240" y="190" width="110" height="70" rx="6" fill="#f8f4ff"/>
+  <rect x="250" y="230" width="14" height="22" rx="3" fill="#ff5d22"/>
+  <rect x="270" y="218" width="14" height="34" rx="3" fill="#ff5d22" opacity="0.7"/>
+  <rect x="290" y="208" width="14" height="44" rx="3" fill="#ff5d22" opacity="0.5"/>
+  <rect x="310" y="222" width="14" height="30" rx="3" fill="#ff5d22" opacity="0.8"/>
+  <polyline points="257,228 277,216 297,206 317,220" stroke="#221638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Person head -->
+  <circle cx="295" cy="162" r="18" fill="#221638"/>
+  <circle cx="295" cy="155" r="10" fill="#c8a882"/>
+  <rect x="285" y="162" width="20" height="18" rx="4" fill="#c8a882"/>
+
+  <!-- Floating data cards -->
+  <rect x="60" y="100" width="110" height="60" rx="10" fill="#221638" filter="drop-shadow(0 4px 16px rgba(34,22,56,0.2))"/>
+  <text x="75" y="125" font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="18" fill="#ff5d22">80%</text>
+  <text x="75" y="142" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#ffffff" opacity="0.7">Faster Insights</text>
+
+  <rect x="330" y="80" width="120" height="60" rx="10" fill="#ff5d22" filter="drop-shadow(0 4px 16px rgba(255,93,34,0.3))"/>
+  <text x="345" y="105" font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="18" fill="#ffffff">100%</text>
+  <text x="345" y="122" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#ffffff" opacity="0.85">Client Focused</text>
+
+  <!-- Connection lines between cards -->
+  <line x1="170" y1="130" x2="330" y2="110" stroke="#ff5d22" stroke-width="1" stroke-dasharray="4 3" opacity="0.3"/>
+
+  <!-- SA flag accent strip -->
+  <rect x="30" y="30" width="8" height="360" rx="4" fill="#007A4D" opacity="0.6"/>
+  <rect x="30" y="30" width="8" height="120" rx="4" fill="#007A4D"/>
+  <rect x="30" y="150" width="8" height="120" rx="4" fill="#FFB612"/>
+  <rect x="30" y="270" width="8" height="120" rx="4" fill="#DE3831"/>
+</svg>

@@ -1,0 +1,133 @@
+.solutions-area {
+    .section-title {
+        max-width: 695px;
+    }
+}
+.single-solutions-box {
+    margin-bottom: 30px;
+    padding: 50px 30px;
+    border-radius: 5px;
+    transition: var(--transition);
+    border: 1px solid #f5f3f2;
+    text-align: center;
+
+    .icon {
+        margin-bottom: 25px;
+        line-height: 1;
+        font-size: 65px;
+    }
+    h3 {
+        margin-bottom: 12px;
+        font: {
+            size: 24px;
+        };
+        a {
+            display: inline-block;
+        }
+    }
+    .view-details-btn {
+        display: inline-block;
+        color: var(--mainColor);
+        margin-top: 3px;
+        position: relative;
+        font: {
+            size: 16.4px;
+            weight: 700;
+        };
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--mainColor);
+            transition: var(--transition);
+        }
+        &:hover {
+            color: var(--blackColor);
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+    &:hover {
+        border-color: var(--mainColor);
+
+        .icon {
+            animation: bounce 2s;
+        }
+    }
+}
+.services-area {
+    &.bg-f1f8fb {
+        .single-solutions-box {
+            border-color: #efeaea;
+
+            &:hover {
+                border-color: var(--mainColor);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .solutions-area {
+        .section-title {
+            max-width: 100%;
+        }
+    }
+    .single-solutions-box {
+        padding: 20px;
+
+        .icon {
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+        h3 {
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+        .view-details-btn {
+            font-size: 15px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .solutions-area {
+        .section-title {
+            max-width: 600px;
+        }
+    }
+    .single-solutions-box {
+        padding: 35px 20px;
+
+        .icon {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        .view-details-btn {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-solutions-box {
+        padding: 40px 20px;
+
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+}

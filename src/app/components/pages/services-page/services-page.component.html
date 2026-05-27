@@ -1,0 +1,38 @@
+<section class="page-title-area">
+    <div class="container">
+        <div class="page-title-content" *ngFor="let pageTitle of pageTitleArea;">
+            <h2>{{pageTitle.title}}</h2>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>{{pageTitle.title}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt="image"></div>
+    <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt="image"></div>
+    <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt="image"></div>
+</section>
+
+<section class="solutions-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title"><img src="assets/img/star-icon.svg" alt="image"> What We Offer</span>
+            <h2>Comprehensive Digital Services</h2>
+            <p>Every service we offer is designed to deliver measurable outcomes for your business.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let service of singleServicesBox;">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <i class="{{service.icon}}"></i>
+                    </div>
+                    <h3>{{service.title}}</h3>
+                    <p>{{service.paragraphText}}</p>
+                    <a routerLink="/{{service.link}}" class="view-details-btn">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-project-start></app-project-start>

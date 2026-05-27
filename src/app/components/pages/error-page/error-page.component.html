@@ -1,0 +1,13 @@
+<section class="error-area ptb-100">
+    <div class="container">
+        <div class="error-content" *ngFor="let Content of errorContent;">
+            <img [src]="Content.img" alt="image">
+            <h3>{{Content.title}}</h3>
+            <p>{{Content.paragraphText}}</p>
+            <div class="btn-box">
+                <a href="##" class="default-btn" onClick="history.go(-1); return false;"><i class="{{Content.goBackBtnIcon}}"></i>{{Content.goBackBtnText}}<span></span></a>
+                <a routerLink="/" class="default-btn"><i class="{{Content.BackToHomeBtnIcon}}"></i>{{Content.BackToHomeBtnText}}<span></span></a>
+            </div>
+        </div>
+    </div>
+</section>

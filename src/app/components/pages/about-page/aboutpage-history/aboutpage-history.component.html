@@ -1,0 +1,40 @@
+<section class="history-area ptb-100 bg-fafafb">
+    <div class="container">
+        <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
+            <span class="sub-title"><img src="assets/img/star-icon.svg" alt="image"> {{sectionTitleContent.subTitle}}</span>
+            <h2>{{sectionTitleContent.title}}</h2>
+            <p>{{sectionTitleContent.paragraphText}}</p>
+        </div>
+
+        <ol class="timeline history-timeline">
+            <li class="timeline-block" *ngFor="let TimelineBlock of historyTimeline;">
+                <div class="timeline-date">
+                    <span>{{TimelineBlock.year}}</span>
+                    {{TimelineBlock.date}}
+                    <sup>th</sup>
+                </div>
+
+                <div class="timeline-icon">
+                    <span class="dot-badge"></span>
+                </div>
+
+                <div class="timeline-content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-12">
+                            <div class="content">
+                                <h3>{{TimelineBlock.title}}</h3>
+                                <p>{{TimelineBlock.paragraphText}}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-12">
+                            <div class="image">
+                                <img [src]="TimelineBlock.img" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>

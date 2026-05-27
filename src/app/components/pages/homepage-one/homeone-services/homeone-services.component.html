@@ -1,0 +1,37 @@
+<section class="services-area ptb-100 bg-f1f8fb">
+    <div class="container">
+        <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
+            <span class="sub-title"><img src="assets/img/star-icon.svg" alt="image"> {{sectionTitleContent.subTitle}}</span>
+            <h2>{{sectionTitleContent.title}}</h2>
+            <p>{{sectionTitleContent.paragraphText}}</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let ServicesBoxContent of singleServicesBox;">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img [src]="ServicesBoxContent.icon" alt="image">
+                    </div>
+                    <h3><a routerLink="/{{ServicesBoxContent.link}}">{{ServicesBoxContent.title}}</a></h3>
+                    <p>{{ServicesBoxContent.paragraphText}}</p>
+                    <a routerLink="/{{ServicesBoxContent.link}}" class="read-more-btn">{{ServicesBoxContent.linkText}} <i class="{{ServicesBoxContent.linkIcon}}"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+                <div class="load-more-btn text-center" *ngFor="let loadMore of loadMoreBtn;">
+                    <a routerLink="/{{loadMore.link}}" class="default-btn"><i class="{{loadMore.linkIcon}}"></i>{{loadMore.linkText}}<span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle-shape2"><img src="assets/img/shape/circle-shape2.png" alt="image"></div>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</section>
