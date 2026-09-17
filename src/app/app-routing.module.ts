@@ -6,12 +6,14 @@ import { TeamPageComponent } from './components/pages/team-page/team-page.compon
 import { ServicesPageComponent } from './components/pages/services-page/services-page.component';
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { ErrorPageComponent } from './components/pages/error-page/error-page.component';
+import { TouchbasePageComponent } from './components/pages/touchbase-page/touchbase-page.component';
 
 const routes: Routes = [
     { path: '', component: HomepageOneComponent },
     { path: 'about-us', component: AboutPageComponent },
     { path: 'team', component: TeamPageComponent },
     { path: 'services', component: ServicesPageComponent },
+    { path: 'touchbase', component: TouchbasePageComponent },
     { path: 'contact', component: ContactPageComponent },
     { path: '**', component: ErrorPageComponent }
 ];

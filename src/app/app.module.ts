@@ -39,6 +39,9 @@ import { ContactPageComponent } from './components/pages/contact-page/contact-pa
 // Error Page
 import { ErrorPageComponent } from './components/pages/error-page/error-page.component';
 
+// Touchbase/Products Page
+import { TouchbasePageComponent } from './components/pages/touchbase-page/touchbase-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +60,8 @@ import { ErrorPageComponent } from './components/pages/error-page/error-page.com
     TeamPageComponent,
     ServicesPageComponent,
     ContactPageComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    TouchbasePageComponent
   ],
   imports: [
     BrowserModule,
