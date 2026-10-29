@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Measuring Analytics ROI">
+  <defs>
+    <linearGradient id="b6bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1b47"/><stop offset="1" stop-color="#221638"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#b6bg)"/>
+  <!-- rising bars with coin -->
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="120" y="250" width="46" height="80" rx="4"/>
+    <rect x="185" y="210" width="46" height="120" rx="4"/>
+    <rect x="250" y="165" width="46" height="165" rx="4"/>
+  </g>
+  <rect x="315" y="120" width="46" height="210" rx="4" fill="#ff5d22"/>
+  <!-- arrow up -->
+  <path d="M120 290 L200 240 L280 200 L360 150" fill="none" stroke="#ff5d22" stroke-width="5" stroke-linecap="round"/>
+  <path d="M360 150 l-24 4 l10 20 z" fill="#ff5d22"/>
+  <!-- coin -->
+  <g transform="translate(470,150)">
+    <circle r="40" fill="#ff5d22"/><circle r="40" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.5"/>
+    <text x="0" y="12" text-anchor="middle" fill="#ffffff" font-family="Nunito, sans-serif" font-size="38" font-weight="700">R</text>
+  </g>
+  <text x="60" y="80" fill="#ffffff" font-family="Nunito, sans-serif" font-size="28" font-weight="700">Analytics ROI</text>
+</svg>

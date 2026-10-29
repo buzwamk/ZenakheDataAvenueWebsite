@@ -20,56 +20,35 @@ export class PortfolioPageComponent implements OnInit {
     sectionTitle: SectionTitleContent[] = [
         {
             subTitle: 'Our Work',
-            title: 'Projects That Deliver Real Impact',
-            paragraphText: 'A selection of the solutions we have built for businesses across Africa — explore by category.'
+            title: 'Projects We Are Proud Of',
+            paragraphText: 'Real solutions we have delivered for our clients — from websites and booking platforms to mobile training apps.'
         }
     ];
 
-    tabs: string[] = ['All', 'Data & AI', 'Web', 'Mobile'];
+    tabs: string[] = ['All', 'Web', 'Mobile'];
     activeTab = 'All';
 
     projects: ProjectItem[] = [
         {
-            category: 'Data & AI',
-            img: 'assets/img/projects/project1.jpg',
-            title: 'Retail Demand Forecasting',
-            subTitle: 'Data & AI',
-            paragraphText: 'A machine-learning pipeline predicting stock demand across 40+ retail outlets, cutting overstock by 23%.'
+            category: 'Web',
+            img: 'assets/img/projects/touchbase-web.svg',
+            title: 'TouchBase Foundation Website',
+            subTitle: 'Web',
+            paragraphText: 'A modern, responsive website for TouchBase Foundation — showcasing their mission and programmes with a clean, accessible design.'
         },
         {
             category: 'Web',
-            img: 'assets/img/projects/project2.jpg',
-            title: 'Customer Portal Platform',
+            img: 'assets/img/projects/tafeni-travel.svg',
+            title: 'Tafeni Travel & Tourism Platform',
             subTitle: 'Web',
-            paragraphText: 'A secure self-service portal handling 50,000+ monthly users with real-time account management.'
+            paragraphText: 'A website and online booking platform for Tafeni Travelling Company, letting customers browse destinations and book travel and tourism experiences in one place.'
         },
         {
             category: 'Mobile',
-            img: 'assets/img/projects/project3.jpg',
-            title: 'Field Services App',
+            img: 'assets/img/projects/wbho-elearning.svg',
+            title: 'WBHO Construction e-Learning App',
             subTitle: 'Mobile',
-            paragraphText: 'A low-bandwidth Android app enabling field agents to capture and sync data offline.'
-        },
-        {
-            category: 'Data & AI',
-            img: 'assets/img/projects/project4.jpg',
-            title: 'Fraud Detection Engine',
-            subTitle: 'Data & AI',
-            paragraphText: 'Real-time anomaly detection flagging suspicious transactions with 94% precision.'
-        },
-        {
-            category: 'Web',
-            img: 'assets/img/projects/project5.jpg',
-            title: 'Analytics Dashboard Suite',
-            subTitle: 'Web',
-            paragraphText: 'Interactive executive dashboards consolidating data from six internal systems into one view.'
-        },
-        {
-            category: 'Mobile',
-            img: 'assets/img/projects/project6.jpg',
-            title: 'Community Health Tracker',
-            subTitle: 'Mobile',
-            paragraphText: 'A cross-platform app helping clinics track patient visits and medication schedules.'
+            paragraphText: 'A mobile e-learning app for WBHO Construction, delivering environmental and safety training to new and existing employees across their construction sites.'
         }
     ];
 

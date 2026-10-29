@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Data Into Decisions">
+  <defs>
+    <linearGradient id="b4bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1b47"/><stop offset="1" stop-color="#221638"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#b4bg)"/>
+  <!-- funnel: data in, decision out -->
+  <g fill="#ff5d22" opacity="0.9">
+    <circle cx="110" cy="120" r="7"/><circle cx="150" cy="150" r="7"/><circle cx="100" cy="175" r="7"/>
+    <circle cx="160" cy="110" r="7"/><circle cx="130" cy="135" r="7"/><circle cx="175" cy="165" r="7"/>
+  </g>
+  <path d="M230 110 H470 L390 210 V300 L310 330 V210 Z" fill="#ffffff"/>
+  <path d="M250 130 H450 L385 210 L365 210 Z" fill="#ff5d22" opacity="0.25"/>
+  <!-- lightbulb out -->
+  <g transform="translate(500,250)">
+    <circle cx="0" cy="0" r="26" fill="#ff5d22"/>
+    <rect x="-9" y="22" width="18" height="12" rx="3" fill="#ffffff"/>
+    <path d="M-6 -4 a6 7 0 0 1 12 0 c0 5 -4 7 -4 11 h-4 c0 -4 -4 -6 -4 -11z" fill="#ffffff"/>
+  </g>
+  <text x="60" y="70" fill="#ffffff" font-family="Nunito, sans-serif" font-size="26" font-weight="700">Data → Decisions</text>
+  <text x="60" y="370" fill="#6b6b84" font-family="Nunito, sans-serif" font-size="16" font-weight="600">INSIGHT THAT CHANGES BEHAVIOUR</text>
+</svg>

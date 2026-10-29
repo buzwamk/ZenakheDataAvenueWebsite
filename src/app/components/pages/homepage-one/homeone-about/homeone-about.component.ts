@@ -32,7 +32,7 @@ export class HomeoneAboutComponent implements OnInit {
     featuresList: List[] = [
         {
             icon: 'assets/img/icon1.svg',
-            title: '3+ Years',
+            title: '2+ Years',
             subTitle: 'In the market'
         },
         {

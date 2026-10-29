@@ -31,7 +31,7 @@ export class InsightsPageComponent implements OnInit {
     articles: ArticleItem[] = [
         {
             category: 'Data & AI',
-            img: 'assets/img/blog/blog1.jpg',
+            img: 'assets/img/blog/blog1.svg',
             date: 'March 12, 2026',
             author: 'Zenakhe Team',
             title: 'Why Low-Bandwidth AI Matters for African Businesses',
@@ -39,7 +39,7 @@ export class InsightsPageComponent implements OnInit {
         },
         {
             category: 'Engineering',
-            img: 'assets/img/blog/blog2.jpg',
+            img: 'assets/img/blog/blog2.svg',
             date: 'February 28, 2026',
             author: 'Zenakhe Team',
             title: 'Building Resilient Data Pipelines on a Budget',
@@ -47,7 +47,7 @@ export class InsightsPageComponent implements OnInit {
         },
         {
             category: 'Business',
-            img: 'assets/img/blog/blog3.jpg',
+            img: 'assets/img/blog/blog3.svg',
             date: 'February 10, 2026',
             author: 'Zenakhe Team',
             title: 'A Practical Roadmap to Digital Transformation',
@@ -55,7 +55,7 @@ export class InsightsPageComponent implements OnInit {
         },
         {
             category: 'Data & AI',
-            img: 'assets/img/blog/blog4.jpg',
+            img: 'assets/img/blog/blog4.svg',
             date: 'January 22, 2026',
             author: 'Zenakhe Team',
             title: 'Turning Raw Data Into Decisions Executives Trust',
@@ -63,7 +63,7 @@ export class InsightsPageComponent implements OnInit {
         },
         {
             category: 'Engineering',
-            img: 'assets/img/blog/blog5.jpg',
+            img: 'assets/img/blog/blog5.svg',
             date: 'January 8, 2026',
             author: 'Zenakhe Team',
             title: 'Choosing the Right Stack for a Cross-Platform App',
@@ -71,7 +71,7 @@ export class InsightsPageComponent implements OnInit {
         },
         {
             category: 'Business',
-            img: 'assets/img/blog/blog6.jpg',
+            img: 'assets/img/blog/blog6.svg',
             date: 'December 15, 2025',
             author: 'Zenakhe Team',
             title: 'Measuring ROI on Analytics Investments',

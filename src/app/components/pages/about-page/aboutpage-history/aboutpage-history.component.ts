@@ -21,21 +21,21 @@ export class AboutpageHistoryComponent implements OnInit {
 
     historyTimeline: TimelineBlock[] = [
         {
-            year: '2020',
+            year: '2024',
             date: 'May 20',
             title: 'Founded in Cape Town',
             paragraphText: 'Zenakhe Digital Solutions was established with a mission to make enterprise-grade data and software solutions accessible to African businesses.',
             img: 'assets/img/history/img1.svg'
         },
         {
-            year: '2022',
+            year: '2025',
             date: 'January 14',
             title: 'First Product Launched',
             paragraphText: 'We shipped our first internal data analytics platform, validating our approach and laying the foundation for client-facing products.',
             img: 'assets/img/history/img2.svg'
         },
         {
-            year: '2023',
+            year: '2025',
             date: 'March 25',
             title: 'First Client Onboarded',
             paragraphText: 'We partnered with our first external client, delivering a custom analytics dashboard that reduced their reporting time by 60%.',

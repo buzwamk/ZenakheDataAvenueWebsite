@@ -29,7 +29,7 @@ export class AboutpageAboutComponent implements OnInit {
     featuresList: List[] = [
         {
             icon: 'assets/img/icon1.svg',
-            title: '3+ Years',
+            title: '2+ Years',
             subTitle: 'In the market'
         },
         {
@@ -52,7 +52,7 @@ export class AboutpageAboutComponent implements OnInit {
     aboutText: Text[] = [
         {
             title: 'Our Story',
-            paragraphText: 'Founded in 2020 in Cape Town, Zenakhe Digital Solutions was born from a belief that African businesses deserve world-class technology built with local context in mind.',
+            paragraphText: 'Founded in 2024 in Cape Town, Zenakhe Digital Solutions was born from a belief that African businesses deserve world-class technology built with local context in mind.',
             featuresList1: 'Local expertise, global standards',
             featuresList2: 'Purpose-built for African markets',
             featuresList3: 'Agile and client-focused',
