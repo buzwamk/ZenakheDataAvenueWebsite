@@ -8,14 +8,113 @@
             </ul>
         </div>
     </div>
-
     <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt="image"></div>
     <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt="image"></div>
     <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt="image"></div>
 </section>
 
-<section class="solutions-area pt-100 pb-70">
+<!-- Products Platform Section -->
+<section class="products-area pt-100 pb-70">
     <div class="container">
-        <!-- Content removed - add new Product Platform content here -->
+        <div class="section-title">
+            <span class="sub-title"><img src="assets/img/star-icon.svg" alt="image"> Our Platform</span>
+            <h2>AI-Powered Digital Products</h2>
+            <p>Choose a product, start building, and launch your digital presence — powered by AI and built for South African businesses.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6" *ngFor="let product of products;">
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="{{product.icon}}"></i>
+                        </div>
+                        <div class="product-badge {{product.badgeClass}}">{{product.badge}}</div>
+                    </div>
+                    <h3>{{product.title}}</h3>
+                    <p class="product-subtitle">{{product.subtitle}}</p>
+                    <p class="product-desc">{{product.description}}</p>
+                    <ul class="product-features">
+                        <li *ngFor="let feature of product.features;">
+                            <i class="bx bx-check-circle"></i> {{feature}}
+                        </li>
+                    </ul>
+                    <div class="product-footer">
+                        <a [href]="product.buttonLink" class="default-btn" [class.btn-coming-soon]="product.status === 'coming-soon'">
+                            <i class="flaticon-right"></i>
+                            {{product.status === 'coming-soon' ? 'Coming Soon' : product.buttonText}}
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<!-- ZenSmart Movers Showcase -->
+<section class="showcase-area pt-100 pb-100 bg-f1f8fb">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title"><img src="assets/img/star-icon.svg" alt="image"> Live Product</span>
+            <h2>Featured: {{showcase.title}}</h2>
+            <p>{{showcase.subtitle}}</p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="showcase-content">
+                    <p class="showcase-desc">{{showcase.description}}</p>
+
+                    <h4>Key Features</h4>
+                    <ul class="showcase-features">
+                        <li *ngFor="let feature of showcase.features;">
+                            <i class="bx bx-check-double"></i> {{feature}}
+                        </li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <div class="tech-stack">
+                        <span class="tech-badge" *ngFor="let tech of showcase.techStack;">{{tech}}</span>
+                    </div>
+
+                    <div class="showcase-actions">
+                        <a [href]="showcase.liveUrl" target="_blank" class="default-btn">
+                            <i class="flaticon-right"></i>
+                            View Live App
+                            <span></span>
+                        </a>
+                        <a routerLink="/contact" class="default-btn btn-outline">
+                            <i class="flaticon-right"></i>
+                            Request a Demo
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="showcase-image">
+                    <div class="app-preview-card">
+                        <div class="preview-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="preview-url">zensmart-api.azurewebsites.net</span>
+                        </div>
+                        <div class="preview-body">
+                            <h5>🚚 ZenSmart Movers</h5>
+                            <p>Multi-role logistics platform</p>
+                            <div class="mini-stats">
+                                <div class="stat"><strong>3</strong><br>User Roles</div>
+                                <div class="stat"><strong>9</strong><br>Services</div>
+                                <div class="stat"><strong>30+</strong><br>API Endpoints</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-project-start></app-project-start>

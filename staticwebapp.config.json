@@ -1,0 +1,20 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/touchbase/*", "/assets/*", "/api/*", "*.css", "*.js", "*.svg", "*.png", "*.jpg", "*.ico"]
+  },
+  "routes": [
+    {
+      "route": "/touchbase/*",
+      "rewrite": "/touchbase/index.html"
+    }
+  ],
+  "globalHeaders": {
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "mimeTypes": {
+    ".svg": "image/svg+xml"
+  }
+}

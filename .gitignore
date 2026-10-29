@@ -45,3 +45,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Local backups and editor
+/_local_backup
+/.kiro

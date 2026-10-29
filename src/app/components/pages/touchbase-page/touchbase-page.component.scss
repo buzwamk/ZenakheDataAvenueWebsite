@@ -1,4 +1,237 @@
-.single-solutions-box {
+/* ============================================================
+   Touchbase / Products Page
+   ============================================================ */
+
+.products-area {
+    position: relative;
+}
+
+.product-card {
+    background: var(--whiteColor, #ffffff);
+    border-radius: 12px;
+    padding: 35px 30px;
     margin-bottom: 30px;
-    text-align: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    }
+
+    .product-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px;
+    }
+
+    .product-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #ff5d22, #ff8a5c);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 30px;
+            color: #ffffff;
+        }
+    }
+
+    .product-badge {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 6px 14px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+
+        &.badge-ai { background: rgba(123, 97, 255, 0.12); color: #7b61ff; }
+        &.badge-data { background: rgba(0, 150, 136, 0.12); color: #009688; }
+        &.badge-dev { background: rgba(255, 93, 34, 0.12); color: #ff5d22; }
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 6px;
+        color: #221638;
+    }
+
+    .product-subtitle {
+        color: #ff5d22;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .product-desc {
+        color: #6b6b84;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .product-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 25px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #444;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            i { color: #ff5d22; font-size: 18px; }
+        }
+    }
+
+    .product-footer {
+        margin-top: auto;
+
+        .btn-coming-soon {
+            opacity: 0.65;
+            pointer-events: none;
+            background-color: #999 !important;
+        }
+    }
+}
+
+/* ── Showcase ── */
+.showcase-area {
+    position: relative;
+
+    .showcase-content {
+        .showcase-desc {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #6b6b84;
+            margin-bottom: 28px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #221638;
+            margin: 24px 0 14px;
+        }
+
+        .showcase-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                color: #444;
+                font-size: 15px;
+                margin-bottom: 12px;
+
+                i { color: #ff5d22; font-size: 20px; margin-top: 2px; }
+            }
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            .tech-badge {
+                background: #221638;
+                color: #ffffff;
+                padding: 7px 16px;
+                border-radius: 50px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+
+        .showcase-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            .btn-outline {
+                background: transparent !important;
+                border: 2px solid #ff5d22 !important;
+                color: #ff5d22 !important;
+
+                &:hover { background: #ff5d22 !important; color: #fff !important; }
+            }
+        }
+    }
+
+    .showcase-image {
+        .app-preview-card {
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+
+            .preview-header {
+                background: #221638;
+                padding: 14px 18px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .dot {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    display: inline-block;
+
+                    &.red { background: #ff5f56; }
+                    &.yellow { background: #ffbd2e; }
+                    &.green { background: #27c93f; }
+                }
+
+                .preview-url {
+                    margin-left: 12px;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 12px;
+                }
+            }
+
+            .preview-body {
+                padding: 40px 30px;
+                text-align: center;
+
+                h5 { font-size: 24px; font-weight: 800; color: #221638; margin-bottom: 8px; }
+                p { color: #6b6b84; margin-bottom: 28px; }
+
+                .mini-stats {
+                    display: flex;
+                    justify-content: space-around;
+                    border-top: 1px solid #eee;
+                    padding-top: 24px;
+
+                    .stat {
+                        font-size: 13px;
+                        color: #6b6b84;
+
+                        strong { font-size: 26px; color: #ff5d22; font-weight: 800; }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .showcase-area .showcase-image { margin-top: 40px; }
 }
