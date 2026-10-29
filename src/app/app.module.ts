@@ -27,11 +27,14 @@ import { AboutPageComponent } from './components/pages/about-page/about-page.com
 import { AboutpageAboutComponent } from './components/pages/about-page/aboutpage-about/aboutpage-about.component';
 import { AboutpageHistoryComponent } from './components/pages/about-page/aboutpage-history/aboutpage-history.component';
 
-// Team Page
-import { TeamPageComponent } from './components/pages/team-page/team-page.component';
-
 // Services Page
 import { ServicesPageComponent } from './components/pages/services-page/services-page.component';
+
+// Portfolio Page
+import { PortfolioPageComponent } from './components/pages/portfolio-page/portfolio-page.component';
+
+// Insights Page
+import { InsightsPageComponent } from './components/pages/insights-page/insights-page.component';
 
 // Contact Page
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
@@ -57,8 +60,9 @@ import { TouchbasePageComponent } from './components/pages/touchbase-page/touchb
     AboutPageComponent,
     AboutpageAboutComponent,
     AboutpageHistoryComponent,
-    TeamPageComponent,
     ServicesPageComponent,
+    PortfolioPageComponent,
+    InsightsPageComponent,
     ContactPageComponent,
     ErrorPageComponent,
     TouchbasePageComponent

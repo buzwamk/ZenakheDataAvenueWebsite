@@ -1,0 +1,54 @@
+<section class="page-title-area">
+    <div class="container">
+        <div class="page-title-content" *ngFor="let pageTitle of pageTitleArea;">
+            <h2>{{pageTitle.title}}</h2>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>{{pageTitle.title}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt="image"></div>
+    <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt="image"></div>
+    <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt="image"></div>
+</section>
+
+<section class="portfolio-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title" *ngFor="let title of sectionTitle;">
+            <span class="sub-title">{{title.subTitle}}</span>
+            <h2>{{title.title}}</h2>
+            <p>{{title.paragraphText}}</p>
+        </div>
+
+        <div class="portfolio-tabs">
+            <ul class="tabs-nav">
+                <li *ngFor="let tab of tabs">
+                    <button type="button"
+                            [class.active]="activeTab === tab"
+                            (click)="switchTab(tab)">
+                        {{tab}}
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let project of filteredProjects;">
+                <div class="single-portfolio-box">
+                    <div class="image">
+                        <img [src]="project.img" alt="{{project.title}}">
+                    </div>
+                    <div class="content">
+                        <span class="category">{{project.subTitle}}</span>
+                        <h3>{{project.title}}</h3>
+                        <p>{{project.paragraphText}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-project-start></app-project-start>
