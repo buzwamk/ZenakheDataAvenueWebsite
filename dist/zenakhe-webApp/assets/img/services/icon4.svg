@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+  <!-- Predictive Analytics: line chart with forecast -->
+  <rect x="5" y="5" width="60" height="60" rx="12" fill="#fff3ee"/>
+  <!-- Axes -->
+  <line x1="14" y1="55" x2="58" y2="55" stroke="#221638" stroke-width="2" stroke-linecap="round"/>
+  <line x1="14" y1="55" x2="14" y2="14" stroke="#221638" stroke-width="2" stroke-linecap="round"/>
+  <!-- Historical line (solid) -->
+  <polyline points="14,48 24,40 34,32 42,28" stroke="#ff5d22" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Forecast line (dashed) -->
+  <polyline points="42,28 50,22 58,16" stroke="#ff5d22" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="4 3"/>
+  <!-- Data points -->
+  <circle cx="14" cy="48" r="3" fill="#221638"/>
+  <circle cx="24" cy="40" r="3" fill="#221638"/>
+  <circle cx="34" cy="32" r="3" fill="#221638"/>
+  <circle cx="42" cy="28" r="3.5" fill="#ff5d22"/>
+  <!-- Forecast point -->
+  <circle cx="58" cy="16" r="3" fill="#ff5d22" opacity="0.5"/>
+</svg>

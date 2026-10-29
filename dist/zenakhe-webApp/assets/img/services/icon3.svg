@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+  <!-- Mobile Development: phone with code -->
+  <rect x="5" y="5" width="60" height="60" rx="12" fill="#fff3ee"/>
+  <!-- Phone body -->
+  <rect x="22" y="10" width="26" height="46" rx="5" fill="#221638"/>
+  <rect x="25" y="16" width="20" height="30" rx="2" fill="#ffffff"/>
+  <circle cx="35" cy="51" r="2.5" fill="#ff5d22"/>
+  <!-- Code symbols on screen -->
+  <text x="27" y="28" font-family="monospace" font-size="7" fill="#ff5d22">&lt;/&gt;</text>
+  <line x1="27" y1="33" x2="43" y2="33" stroke="#221638" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="27" y1="37" x2="38" y2="37" stroke="#221638" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="27" y1="41" x2="41" y2="41" stroke="#221638" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+</svg>

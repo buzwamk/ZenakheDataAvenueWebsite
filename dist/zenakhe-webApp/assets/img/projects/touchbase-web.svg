@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="TouchBase Foundation Website">
+  <defs>
+    <linearGradient id="tbbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1b47"/>
+      <stop offset="1" stop-color="#221638"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#tbbg)"/>
+  <g opacity="0.1" stroke="#ff5d22" stroke-width="2" fill="none"><circle cx="300" cy="200" r="150"/><circle cx="300" cy="200" r="100"/></g>
+  <!-- browser window -->
+  <rect x="110" y="105" width="380" height="235" rx="14" fill="#ffffff"/>
+  <rect x="110" y="105" width="380" height="40" rx="14" fill="#ff5d22"/>
+  <rect x="110" y="131" width="380" height="14" fill="#ff5d22"/>
+  <g fill="#ffffff"><circle cx="134" cy="125" r="6"/><circle cx="154" cy="125" r="6"/><circle cx="174" cy="125" r="6"/></g>
+  <!-- hero + hands/connection motif -->
+  <circle cx="300" cy="210" r="34" fill="none" stroke="#ff5d22" stroke-width="4"/>
+  <path d="M283 210 a17 17 0 0 1 34 0" fill="none" stroke="#ff5d22" stroke-width="4"/>
+  <circle cx="283" cy="200" r="5" fill="#221638"/>
+  <circle cx="317" cy="200" r="5" fill="#221638"/>
+  <rect x="200" y="268" width="200" height="10" rx="5" fill="#e3e0ea"/>
+  <rect x="235" y="288" width="130" height="10" rx="5" fill="#e3e0ea"/>
+  <rect x="250" y="312" width="100" height="16" rx="8" fill="#ff5d22"/>
+  <text x="60" y="80" fill="#ffffff" font-family="Nunito, sans-serif" font-size="28" font-weight="700">TouchBase Foundation</text>
+</svg>

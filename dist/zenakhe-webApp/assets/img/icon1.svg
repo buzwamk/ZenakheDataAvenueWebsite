@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <!-- Years on market: calendar icon -->
+  <rect x="6" y="10" width="48" height="42" rx="6" fill="#fff3ee" stroke="#ff5d22" stroke-width="2"/>
+  <rect x="6" y="10" width="48" height="14" rx="6" fill="#ff5d22"/>
+  <rect x="6" y="18" width="48" height="6" fill="#ff5d22"/>
+  <line x1="20" y1="4" x2="20" y2="16" stroke="#221638" stroke-width="3" stroke-linecap="round"/>
+  <line x1="40" y1="4" x2="40" y2="16" stroke="#221638" stroke-width="3" stroke-linecap="round"/>
+  <rect x="14" y="32" width="8" height="8" rx="2" fill="#ff5d22"/>
+  <rect x="26" y="32" width="8" height="8" rx="2" fill="#ff5d22" opacity="0.5"/>
+  <rect x="38" y="32" width="8" height="8" rx="2" fill="#ff5d22" opacity="0.3"/>
+</svg>

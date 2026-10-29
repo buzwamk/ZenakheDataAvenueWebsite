@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f4ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fff3ee;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8f4ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="340" cy="250" r="220" fill="url(#bgGrad)"/>
+
+  <!-- Main dashboard card -->
+  <rect x="120" y="80" width="340" height="240" rx="16" fill="url(#cardGrad)" filter="drop-shadow(0 8px 32px rgba(34,22,56,0.12))"/>
+  <!-- Card header -->
+  <rect x="120" y="80" width="340" height="44" rx="16" fill="#221638"/>
+  <rect x="120" y="108" width="340" height="16" fill="#221638"/>
+  <circle cx="142" cy="102" r="6" fill="#ff5d22"/>
+  <circle cx="158" cy="102" r="6" fill="#ffb347" opacity="0.7"/>
+  <circle cx="174" cy="102" r="6" fill="#4caf50" opacity="0.7"/>
+  <text x="200" y="107" font-family="Nunito, Arial, sans-serif" font-size="11" fill="#ffffff" opacity="0.7">Analytics Dashboard</text>
+
+  <!-- Chart area -->
+  <!-- Bar chart -->
+  <rect x="148" y="200" width="22" height="80" rx="4" fill="#ff5d22" opacity="0.3"/>
+  <rect x="148" y="220" width="22" height="60" rx="4" fill="#ff5d22"/>
+  <rect x="180" y="180" width="22" height="100" rx="4" fill="#ff5d22" opacity="0.3"/>
+  <rect x="180" y="200" width="22" height="80" rx="4" fill="#ff5d22"/>
+  <rect x="212" y="160" width="22" height="120" rx="4" fill="#ff5d22" opacity="0.3"/>
+  <rect x="212" y="175" width="22" height="105" rx="4" fill="#ff5d22"/>
+  <rect x="244" y="190" width="22" height="90" rx="4" fill="#ff5d22" opacity="0.3"/>
+  <rect x="244" y="205" width="22" height="75" rx="4" fill="#ff5d22"/>
+  <rect x="276" y="150" width="22" height="130" rx="4" fill="#ff5d22" opacity="0.3"/>
+  <rect x="276" y="162" width="22" height="118" rx="4" fill="#ff5d22"/>
+
+  <!-- Trend line over bars -->
+  <polyline points="159,255 191,235 223,210 255,225 287,195" stroke="#221638" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="159" cy="255" r="4" fill="#221638"/>
+  <circle cx="191" cy="235" r="4" fill="#221638"/>
+  <circle cx="223" cy="210" r="4" fill="#221638"/>
+  <circle cx="255" cy="225" r="4" fill="#221638"/>
+  <circle cx="287" cy="195" r="5" fill="#ff5d22"/>
+
+  <!-- Axis line -->
+  <line x1="140" y1="285" x2="320" y2="285" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- KPI cards row -->
+  <rect x="140" y="300" width="90" height="48" rx="8" fill="#ffffff" filter="drop-shadow(0 2px 8px rgba(0,0,0,0.08))"/>
+  <text x="155" y="320" font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="14" fill="#221638">98%</text>
+  <text x="155" y="336" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#6b6b84">Accuracy</text>
+  <circle cx="215" cy="318" r="8" fill="#fff3ee"/>
+  <polyline points="210,320 213,316 217,321 220,315" stroke="#ff5d22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <rect x="242" y="300" width="90" height="48" rx="8" fill="#ffffff" filter="drop-shadow(0 2px 8px rgba(0,0,0,0.08))"/>
+  <text x="257" y="320" font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="14" fill="#221638">2.4x</text>
+  <text x="257" y="336" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#6b6b84">Growth</text>
+  <circle cx="317" cy="318" r="8" fill="#fff3ee"/>
+  <polyline points="312,322 315,317 319,320 322,314" stroke="#ff5d22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Floating badge: AI -->
+  <rect x="390" y="110" width="110" height="56" rx="12" fill="#221638" filter="drop-shadow(0 4px 16px rgba(34,22,56,0.25))"/>
+  <circle cx="410" cy="138" r="12" fill="#ff5d22"/>
+  <text x="406" y="143" font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="10" fill="#ffffff">AI</text>
+  <text x="428" y="132" font-family="Nunito, Arial, sans-serif" font-weight="700" font-size="10" fill="#ffffff">Powered</text>
+  <text x="428" y="147" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#ff5d22">Analytics</text>
+
+  <!-- Floating badge: Live -->
+  <rect x="60" y="200" width="100" height="52" rx="12" fill="#ffffff" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.10))"/>
+  <circle cx="80" cy="226" r="6" fill="#4caf50"/>
+  <circle cx="80" cy="226" r="3" fill="#4caf50"/>
+  <text x="92" y="222" font-family="Nunito, Arial, sans-serif" font-weight="700" font-size="10" fill="#221638">Live Data</text>
+  <text x="92" y="236" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#6b6b84">Real-time</text>
+
+  <!-- Floating badge: SA flag colours accent -->
+  <rect x="390" y="340" width="120" height="52" rx="12" fill="#ffffff" filter="drop-shadow(0 4px 16px rgba(0,0,0,0.10))"/>
+  <rect x="390" y="340" width="6" height="52" rx="3" fill="#007A4D"/>
+  <text x="404" y="362" font-family="Nunito, Arial, sans-serif" font-weight="700" font-size="10" fill="#221638">Cape Town, SA</text>
+  <text x="404" y="378" font-family="Nunito, Arial, sans-serif" font-size="9" fill="#6b6b84">Proudly African</text>
+
+  <!-- Decorative dots grid -->
+  <g opacity="0.15">
+    <circle cx="50" cy="80" r="3" fill="#ff5d22"/>
+    <circle cx="65" cy="80" r="3" fill="#ff5d22"/>
+    <circle cx="80" cy="80" r="3" fill="#ff5d22"/>
+    <circle cx="50" cy="95" r="3" fill="#ff5d22"/>
+    <circle cx="65" cy="95" r="3" fill="#ff5d22"/>
+    <circle cx="80" cy="95" r="3" fill="#ff5d22"/>
+    <circle cx="50" cy="110" r="3" fill="#ff5d22"/>
+    <circle cx="65" cy="110" r="3" fill="#ff5d22"/>
+    <circle cx="80" cy="110" r="3" fill="#ff5d22"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="510" cy="380" r="3" fill="#221638"/>
+    <circle cx="525" cy="380" r="3" fill="#221638"/>
+    <circle cx="540" cy="380" r="3" fill="#221638"/>
+    <circle cx="510" cy="395" r="3" fill="#221638"/>
+    <circle cx="525" cy="395" r="3" fill="#221638"/>
+    <circle cx="540" cy="395" r="3" fill="#221638"/>
+  </g>
+</svg>
