@@ -42,8 +42,8 @@ import { ContactPageComponent } from './components/pages/contact-page/contact-pa
 // Error Page
 import { ErrorPageComponent } from './components/pages/error-page/error-page.component';
 
-// Touchbase/Products Page
-import { TouchbasePageComponent } from './components/pages/touchbase-page/touchbase-page.component';
+// Product Platform Page
+import { ProductPlatformComponent } from './components/pages/product-platform/product-platform.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +65,7 @@ import { TouchbasePageComponent } from './components/pages/touchbase-page/touchb
     InsightsPageComponent,
     ContactPageComponent,
     ErrorPageComponent,
-    TouchbasePageComponent
+    ProductPlatformComponent
   ],
   imports: [
     BrowserModule,

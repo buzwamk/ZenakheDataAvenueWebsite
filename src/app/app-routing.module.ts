@@ -7,7 +7,7 @@ import { PortfolioPageComponent } from './components/pages/portfolio-page/portfo
 import { InsightsPageComponent } from './components/pages/insights-page/insights-page.component';
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { ErrorPageComponent } from './components/pages/error-page/error-page.component';
-import { TouchbasePageComponent } from './components/pages/touchbase-page/touchbase-page.component';
+import { ProductPlatformComponent } from './components/pages/product-platform/product-platform.component';
 
 const routes: Routes = [
     { path: '', component: HomepageOneComponent },
@@ -15,7 +15,7 @@ const routes: Routes = [
     { path: 'services', component: ServicesPageComponent },
     { path: 'portfolio', component: PortfolioPageComponent },
     { path: 'insights', component: InsightsPageComponent },
-    { path: 'touchbase', component: TouchbasePageComponent },
+    { path: 'product-platform', component: ProductPlatformComponent },
     { path: 'contact', component: ContactPageComponent },
     { path: '**', component: ErrorPageComponent }
 ];

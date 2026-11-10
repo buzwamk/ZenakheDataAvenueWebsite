@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-touchbase-page',
-    templateUrl: './touchbase-page.component.html',
-    styleUrls: ['./touchbase-page.component.scss']
+    selector: 'app-product-platform',
+    templateUrl: './product-platform.component.html',
+    styleUrls: ['./product-platform.component.scss']
 })
-export class TouchbasePageComponent implements OnInit {
+export class ProductPlatformComponent implements OnInit {
 
     constructor() {}
 
